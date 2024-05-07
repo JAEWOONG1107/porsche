@@ -1,0 +1,70 @@
+/* scroll design */
+body::-webkit-scrollbar {
+    width : 10px;
+    height : 20px;
+}
+body::-webkit-scrollbar-thumb {
+    background : #fff;
+    border: 2px solid #2b2b2b;
+    border-radius: 12px 12px 12px 12px;
+}
+body::-webkit-scrollbar-track {
+    background : #2b2b2b;
+}
+
+/* wrap */
+#wrap {width : 100%; display : flex; flex-flow : row wrap; font-family : 'Pretendard'; background : #000; overflow : hidden;}
+#wrap h1 {font-family : 'porsche';}
+
+/* header */
+header {width : 100%; height : 80px; background : #222; display : flex; align-items: center; justify-content: space-between; position : fixed; top : 0; left: 0; right : 0; z-index: 1000;}
+header a.logo {display : block; height : 50px; width : 280px; display : flex; justify-content: center;}
+header img {height : 100%;}
+header .topLeft {display : flex; align-items: center;}
+header .topMainMenu {display : flex; justify-content: space-around;}
+header .topMainMenu li a {display : block; padding : 10px 20px; color : #999; font-size : 15px; transition : .4s;}
+header .topMainMenu li a:hover {color : #fff;}
+header a i {font-size : 18px;}
+header .topRight {display : flex; align-items: center; padding-right : 20px;}
+header .topRightMenu {display : flex; justify-content: space-around;}
+header .topRightMenu li a {display : block; padding : 10px 20px; color : #999; font-size : 15px; transition : .4s;}
+header .topRightMenu li a:hover {color : #fff;}
+
+/* chatBot, topMove Button */
+.rightMenu {position : fixed; bottom : 0; right : 0; z-index : 1001;}
+.rightMenu div {width : 50px; height : 50px; background : #222; display : flex; justify-content: center; align-items: center; color : #fff; cursor : pointer;}
+
+.chatBotContent {width : 400px; height : 600px; background : #222; position : fixed; right : 60px; bottom : 10px; z-index : 1001; border-radius : 5px; box-shadow : 1px 1px 5px #000; display : flex; flex-flow : row wrap; display : none;}
+.chatBotContent .chatTop {height : 50px; width : 100%; display : flex; align-items: center; justify-content: flex-end; font-size : 14px; padding : 0 13px; border-bottom : 1px solid #ccc;}
+.chatBotContent .chatTop i {cursor : pointer; color : #fff;}
+
+.chatBotContent .chatContent {width : 100%; height : 550px; display : flex; flex-flow : row wrap; align-content: flex-start; color : #fff; position : relative;}
+.chatBotContent .chatContent .chatImg {width : 50px; height: 50px; border-radius : 50%; background : #333; display : flex; justify-content: center; align-items: center; margin : 10px;}
+.chatBotContent .chatContent .chatImg img {width : 50%;}
+.chatBotContent .chatContent .chatText {width : 220px; margin-top : 10px 0; font-size : 13px; display : flex; align-items: center;}
+.chatBotContent .chatContent .chatBox {margin : 0 70px;}
+.chatBotContent .chatContent .chatBox ul li {padding : 10px 10px; font-size : 13px; border : 1px solid #ccc; border-radius: 3px; width : 220px; margin-bottom : 5px; cursor : pointer; transition : .3s;}
+.chatBotContent .chatContent .chatBox ul li:hover {background : #555;}
+
+.chatBotContent .chatContent span {padding : 10px; background : #333; font-size : 13px; position : absolute; bottom : 10px; left : 50%; margin-left : -50px; display : block; width : 100px; text-align : center; border-radius : 25px; cursor : pointer;}
+
+.chatShow {display : block;}
+
+/* 반응형 */
+@media screen and (max-width : 1024px) {
+    header .topMainMenu {display : none;}
+    section.section1 > h1 {font-size : 40px;}
+    section.section2 > h1 {font-size : 40px;}
+    section.section3 > h1 {font-size : 40px;}
+    section.section4 > h1 {font-size : 40px;}
+    section.section3 .eventText h2 {color : #fff; font-size : 80px; letter-spacing : 4px;}
+}
+
+@media screen and (max-width : 768px) {
+    section.section1 > h1 {font-size : 30px;}
+    section.section2 > h1 {font-size : 30px;}
+    section.section3 > h1 {font-size : 30px;}
+    section.section4 > h1 {font-size : 30px;}
+    section.section3 .eventText h2 {color : #fff; font-size : 50px; letter-spacing : 4px;}
+    header a.logo {display : block; height : 50px; width : 100px; display : flex; justify-content: center;}
+}

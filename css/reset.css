@@ -1,0 +1,42 @@
+/* CSS Reset File */
+
+/* font */
+@font-face {
+    font-family: 'porsche';
+    src: url("../font/911porschav3ital.ttf") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+	margin : 0; padding : 0;
+	box-sizing : border-box;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width : 100%;
+}
+a {
+	text-decoration : none;
+	display : block;
+	color : inherit;
+}

@@ -1,0 +1,34 @@
+main {width : 100%; height : calc(100vh - 80px); position : relative; top : 80px; background : url('../img/porscheBg.webp') center center / cover no-repeat; overflow : hidden;}
+
+main .swiper {width: 60%; height: 100%; color : #fff; overflow : visible; position : relative;}
+main .swiper-slide {text-align: center; font-size: 18px; display: flex; flex-flow : row wrap; justify-content: center; align-content: flex-start;}
+main .swiper-slide img {display: block; width: 100%; position : absolute; left : 50%; top : 50%; margin-top : -25%; margin-left : -50%;}
+main .swiper-slide .carName {width : 100%; position : relative; top : 80px; transition : 2s; opacity : 0;}
+main .swiper-slide h1 {width : 100%; font-size : 60px;}
+main .swiper-slide p {width : 100%; margin-top : 10px;}
+main .swiper-slide .carInfo {width : 80%; position : absolute; bottom : 130px; transition : 2s; opacity : 0;}
+main .swiper-slide .carInfo ul {display : flex; justify-content: space-between;}
+main .swiper-slide .carInfo ul li {width : calc(100% / 3);}
+main .swiper-slide .carInfo h2 {font-size : 20px;}
+main .swiper-slide .carInfo p {font-size : 14px;}
+main .swiper-slide .carMenu {width : 100%; position : absolute; bottom : 40px; transition : 2s; opacity : 0;}
+main .swiper-slide .carMenu ul {display : flex; justify-content: center;}
+main .swiper-slide .carMenu ul li a {padding : 15px; border : 1px solid #fff; margin : 5px; color : #ccc; transition : .4s;}
+main .swiper-slide .carMenu ul li a:hover {background : rgba(255,255,255,0.3); color : #fff;}
+
+.show {display : block;}
+@media screen and (max-width : 1024px) {
+
+}
+
+@media screen and (max-width : 768px) {
+    main .swiper-slide h1 {width : 100%; font-size : 40px; text-align : center;}
+    main .swiper-slide .carMenu {display : none;}
+    main .swiper-slide .carInfo {width : 100%;  bottom : 50px;}
+    main .swiper-slide .carInfo ul {flex-flow : row wrap;}
+    main .swiper-slide .carInfo ul li {width : 100%; margin-bottom : 5px;}
+    main .swiper-slide .carInfo h2 {font-size : 14px;}
+    main .swiper-slide .carInfo p {font-size : 11px;}
+
+    main .swiper-slide img {display: block; width: 100%; position : absolute; left : 50%; top : 50%; margin-top : -10%; margin-left : -50%;}
+}

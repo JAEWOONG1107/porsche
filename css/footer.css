@@ -1,0 +1,37 @@
+footer {width : 100%; color : #ccc; position : relative; top : 80px; background : #000; padding-bottom :80px;}
+footer .footerMenu {width : 100%; display : flex; justify-content: space-between; padding : 30px 0; border-bottom : 1px solid #444;}
+footer .footerMenu ul {display: flex; margin : 0 30px;}
+footer .footerMenu ul li {padding : 0 10px;}
+footer .footerMenu ul:first-child li {border-right : 1px solid #444; display: flex; align-items: center;}
+footer .footerMenu ul:first-child li a {font-size : 13px;}
+footer .footerMenu ul:first-child li:last-child {border : none;}
+footer .footerMenu .boldT {color : #d5001c;}
+
+footer .footerMiddle {width : 100%; display : flex; justify-content: space-between; padding : 30px 0; align-items: center; border-bottom : 1px solid #444;}
+footer .footerMiddle ul {display : flex; margin : 0 30px; height : 19px;}
+footer .footerMiddle ul li {padding : 0 10px; display : flex; align-items: center; border-right : 1px solid #444;}
+footer .footerMiddle ul li:last-child {border : none;}
+footer .footerMiddle ul li a {font-size : 13px;}
+
+footer .footerMiddle .langTab {margin : 0 30px; display : flex;}
+footer .footerMiddle .langTab span {padding : 10px 20px; background : #222; color : #fff; cursor : pointer;}
+
+footer .footerMiddle .langTab span.langBtn {background : #fff; color : #222;}
+
+footer .footerBottom {width : 100%; padding : 30px 0; display : flex; justify-content: center; flex-flow : row wrap;}
+footer .footerBottom img {height : 300px;}
+footer .footerBottom p {width : 100%; text-align : center; margin-top : 0px;}
+
+footer a:hover {font-weight : bold;}
+
+@media screen and (max-width : 1024px) {
+    footer .footerMiddle {flex-flow : column wrap; align-content: center; align-items: center;}
+    footer .footerMiddle .langTab {margin-top : 10px;}
+}
+
+@media screen and (max-width : 768px) {  
+    footer .footerMenu {flex-flow : column wrap; align-content: center; align-items: center;}
+    footer .footerMenu ul:last-child {margin-top : 10px;}
+    footer .footerMenu ul:first-child li a {font-size : 11px;}
+    footer .footerMiddle ul li a {font-size : 11px;}
+}
